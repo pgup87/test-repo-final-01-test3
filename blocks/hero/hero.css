@@ -1,37 +1,37 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
-}
-
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero picture {
+.hero .hero-image {
   position: absolute;
-  z-index: -1;
   inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+  z-index: -1;
 }
 
-.hero img {
-  object-fit: cover;
+.hero .hero-image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
-@media (width >= 900px) {
+.hero .hero-content {
+  padding: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  max-width: 600px;
+  margin: 2rem;
+}
+
+@media (min-width: 900px) {
   .hero {
-    padding: 40px 32px;
+    min-height: 600px;
+    justify-content: center;
+  }
+  .hero .hero-content {
+    padding: 4rem;
+    margin-left: 10%;
   }
 }
