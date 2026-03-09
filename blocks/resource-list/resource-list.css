@@ -1,0 +1,17 @@
+.resource-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0056b3;
+}
